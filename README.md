@@ -1,3 +1,5 @@
+You can preview this project from: https://my-clothing-store-exercise.herokuapp.com/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
