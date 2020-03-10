@@ -9,10 +9,10 @@ import CollectionPage from '../collection/collection.component';
 import { fetchCollectionStartAsync } from '../../redux/shop/shop.actions.js';
 import { selectIsCollectionFetching, selectIsCollectionsLoaded } from '../../redux/shop/shop.selector';
 
-import WithSipinner from '../../components/with-spinner/with-spinner.component';
+import WithSpinner from '../../components/with-spinner/with-spinner.component';
 
-const CollectionsOverviewWithSpinner = WithSipinner(CollectionsOverview);
-const CollectionPageWithSipinner = WithSipinner(CollectionPage);
+const CollectionsOverviewWithSpinner = WithSpinner(CollectionsOverview);
+const CollectionPageWithSpinner = WithSpinner(CollectionPage);
 
 class ShopPage extends React.Component {
 	componentDidMount() {
@@ -31,7 +31,7 @@ class ShopPage extends React.Component {
 				/>
 				<Route
 					path={`${match.path}/:collectionId`}
-					render={(props) => <CollectionPageWithSipinner isLoading={!isCollectionsLoaded} {...props} />}
+					render={(props) => <CollectionPageWithSpinner isLoading={!isCollectionsLoaded} {...props} />}
 				/>
 			</div>
 		);

@@ -16,31 +16,34 @@ import CartDropdown from '../cart-dropdown/cart-dropdown.component';
 import { ReactComponent as Logo } from '../../assets/crown.svg';
 import './header.style.scss';
 
+import {HeaderContainer, LogoContainer, OptionDiv, OptionLink, OptionsContainer} from "./header.style";
+
+
 const Header = ({ currentUser, hidden }) => (
-	<div className="header">
-		<Link className="logo-Container" to="/">
+	<HeaderContainer>
+		<LogoContainer to="/">
 			<Logo className="logo" />
-		</Link>
-		<div className="options">
-			<Link className="option" to="/shop">
+		</LogoContainer>
+		<OptionsContainer className="options">
+			<OptionLink to="/shop">
 				SHOP
-			</Link>
-			<Link className="option" to="/shop">
+			</OptionLink>
+			<OptionLink to="/shop">
 				CONTACT
-			</Link>
+			</OptionLink>
 			{currentUser ? (
-				<div className="option" onClick={() => auth.signOut()}>
+				<OptionDiv onClick={() => auth.signOut()}>
 					SIGN OUT
-				</div>
+				</OptionDiv>
 			) : (
-				<Link className="option" to="/signin">
+				<OptionLink to="/signin">
 					SIGN IN
-				</Link>
+				</OptionLink>
 			)}
 			<CartIcon />
-		</div>
+		</OptionsContainer>
 		{hidden ? null : <CartDropdown />}
-	</div>
+	</HeaderContainer>
 );
 
 const mapStateToProps = createStructuredSelector({
