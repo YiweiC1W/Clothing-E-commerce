@@ -1,5 +1,6 @@
 import React from 'react';
 import './map.style.scss'
+import StripeCheckoutButton from "../../components/stripe-button/stripe-button.component";
 
 class MapPage extends React.Component {
 
@@ -33,7 +34,7 @@ class MapPage extends React.Component {
                             Directions </a>
 
                     </div>
-                    <button className='select-button'>SELECT</button>
+                    <StripeCheckoutButton price={200} />
                 </div>
 
                 <div className='row'>
@@ -60,7 +61,7 @@ class MapPage extends React.Component {
                             Directions </a>
 
                     </div>
-                    <button className='select-button'>SELECT</button>
+                    <StripeCheckoutButton price={200} />
                 </div>
 
                 <div className='row'>
@@ -87,7 +88,7 @@ class MapPage extends React.Component {
                             Directions </a>
 
                     </div>
-                    <button className='select-button'>SELECT</button>
+                    <StripeCheckoutButton price={200} />>
                 </div>
 
                 </div>

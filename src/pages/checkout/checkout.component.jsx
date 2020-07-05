@@ -41,7 +41,7 @@ const CheckoutPage = ({ cartItems, total }) => (
 
 		<StripeCheckoutButton price={total} />*/}
 
-		<Link to="/map">Find Local Pickup</Link>
+		<Link className='link' to="/map">Find Local Pickup Point</Link>
 
 	</div>
 );

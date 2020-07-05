@@ -11,7 +11,7 @@ export const fetchCollectionSuccess = (collectionsMap) => ({
 });
 
 export const fetchCollectionFailure = (errorMessage) => ({
-	tyoe: ShopActionTypes.FETCH_COLLECTION_FAILURE,
+	type: ShopActionTypes.FETCH_COLLECTION_FAILURE,
 	payload: errorMessage
 });
 
