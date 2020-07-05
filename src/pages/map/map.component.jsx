@@ -7,7 +7,7 @@ class MapPage extends React.Component {
         return (
             <div className='map'>
                 <input placeholder='Enter Your Postcode or Address' />
-                <img src='https://cdn8.openculture.com/2017/11/15230237/Vinyl-2-e1510817749492.png' alt='map'/>
+                <img className='map-pic' src='https://cdn8.openculture.com/2017/11/15230237/Vinyl-2-e1510817749492.png' alt='map'/>
 
                 <div className='row'>
                     <img
