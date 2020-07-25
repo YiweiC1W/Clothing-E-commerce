@@ -7,10 +7,10 @@ const INITIAL_STATE = {
 			linkUrl: 'shop/hats'
 		},
 		{
-			title: 'jackets',
-			imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
+			title: 'Kitchen',
+			imageUrl: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/kitchen-ideas-calderone-kitchen-006-1583960334.jpg',
 			id: 2,
-			linkUrl: 'shop/jackets'
+			linkUrl: 'shop/kitchen'
 		},
 		{
 			title: 'sneakers',

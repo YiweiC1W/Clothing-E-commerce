@@ -24,6 +24,7 @@ const Header = ({ currentUser, hidden }) => (
 		<LogoContainer to="/">
 			<Logo className="logo" />
 		</LogoContainer>
+		<h1>DLS - Customer Shopping System</h1>
 		<OptionsContainer className="options">
 			<OptionLink to="/shop">
 				ONLINE SHOP
